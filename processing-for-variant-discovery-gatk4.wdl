@@ -532,14 +532,14 @@ task CreateSequenceGroupingTSV {
             temp_size += sequence_tuple[1]
             tsv_string += "\t" + sequence_tuple[0] + hg38_protection_tag
         else:
-            tsv_string += "\n" + sequence_tuple[0] + hg38_protection_tag
+            tsv_string += "\t" + sequence_tuple[0] + hg38_protection_tag
             temp_size = sequence_tuple[1]
     # add the unmapped sequences as a separate line to ensure that they are recalibrated as well
     with open("sequence_grouping.txt","w") as tsv_file:
       tsv_file.write(tsv_string)
       tsv_file.close()
 
-    tsv_string += '\n' + "unmapped"
+    tsv_string += '\t' + "unmapped"
 
     with open("sequence_grouping_with_unmapped.txt","w") as tsv_file_with_unmapped:
       tsv_file_with_unmapped.write(tsv_string)
