@@ -1,7 +1,7 @@
 {
   "PreProcessingForVariantDiscovery_GATK4.sample_name": "NA12878",
   "PreProcessingForVariantDiscovery_GATK4.ref_name": "hg38",
-  "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams_list": "gs://gatk-test-data/wgs_ubam/NA12878_24RG/NA12878_24RG_small.txt",
+  "PreProcessingForVariantDiscovery_GATK4.flowcell_unmapped_bams_list": "/home/ubuntu/gatk4/gatk-test-data/wgs_ubam/NA12878_24RG/NA12878_24RG_small.txt",
   "PreProcessingForVariantDiscovery_GATK4.unmapped_bam_suffix": ".bam",
   
   "PreProcessingForVariantDiscovery_GATK4.ref_dict": "gs://gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.dict",
